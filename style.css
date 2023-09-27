@@ -58,7 +58,7 @@ ul li{
     cursor: pointer;
     position: relative;
     height: 50%;
-    padding: 6px 20px 6px 20px;
+    padding: 6px 20px 6px 30px;
     margin-left: 28%;
     margin-right: 26%;
     margin-top:0.1%;
@@ -78,4 +78,9 @@ ul li.checked{
     background: #603b3b;
     color: black;
     text-decoration: line-through;
+}
+.close{
+    position: absolute;
+    color: black;
+    right: 2%;
 }
