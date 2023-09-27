@@ -8,12 +8,16 @@ function addTodo() {
         var text = document.createTextNode(newTask);
         list.appendChild(text);
         var span = document.createElement("SPAN");
-        var txt = document.createTextNode("")
+        var txt = document.createTextNode("\u00D7")
         span.className = "close";
         span.appendChild(txt);
         list.appendChild(span);
         document.getElementById("seznam").appendChild(list);
         inputElement.value = "";
+    }
+    span.onclick = function(){
+      var div = this.parentElement;
+      div.style.display = "none"
     }
 }
 var list = document.querySelector('ul');
